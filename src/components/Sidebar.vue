@@ -4,11 +4,11 @@
             <div class="logo">
                 <img src="../assets/1.png" alt />
             </div>
-            <router-link to="/" tag="li">
+            <router-link to="/">
                 <i class="fas fa-star"></i>
                 <p>Profile</p>
             </router-link>
-            <router-link to="/editeprofile" tag="li">
+            <router-link to="/editeprofile">
                 <i class="fas fa-home"></i>
                 <p>Edit Profile</p>
             </router-link>

@@ -11,6 +11,7 @@
             <router-link to="/" @click="save()">
                 <button id="save">Save</button>
             </router-link>
+            <button @click="cancel()">cancel</button>
         </div>
     </div>
 </template>
@@ -29,6 +30,12 @@ export default {
             this.user.lastName = document.getElementById("lastName").value;
             this.user.email = document.getElementById("email").value;
             this.user.born = document.getElementById("born").value;
+        },
+        cancel: function () {
+            document.getElementById("name").value = "";
+            document.getElementById("lastName").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("born").value = "";
         }
     }
 
@@ -36,7 +43,6 @@ export default {
 </script>
 <style lang="scss">
 .editeprofile {
-    display: flow-root;
     .profile_img {
         display: flex;
         justify-content: center;
